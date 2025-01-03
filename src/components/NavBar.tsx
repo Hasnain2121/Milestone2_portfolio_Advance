@@ -1,5 +1,5 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ export default function NavBar() {
       <nav className="absolute top-0 left-0 w-full py-4 px-8 flex justify-between items-center bg-transparent">
         {/* Logo */}
         <div className="text-2xl font-bold text-orange-600">
-          <a href="/"> it'sHasnain </a>
+          <a href="/"> it&apos;sHasnain </a>
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -20,7 +20,7 @@ export default function NavBar() {
         {/* Navigation Links */}
         <ul
           className={`flex-col md:flex-row flex gap-6 text-sm md:text-base absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 transition-all duration-300 ${
-            isOpen ? 'block' : 'hidden md:flex'
+            isOpen ? "flex" : "hidden md:flex"
           }`}
         >
           <li className="hover:text-orange-600 transition">
@@ -60,3 +60,4 @@ export default function NavBar() {
     </div>
   );
 }
+
