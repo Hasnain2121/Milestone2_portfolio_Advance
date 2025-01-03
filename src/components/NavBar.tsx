@@ -9,7 +9,7 @@ export default function NavBar() {
       <nav className="absolute top-0 left-0 w-full py-4 px-8 flex justify-between items-center bg-black text-white z-10">
         {/* Logo */}
         <div className="text-2xl font-bold text-orange-600">
-          <a href="/"> it&apos;sHasnain </a>
+          <a href="/"> it&apos;sMe </a>
         </div>
 
         {/* Hamburger Menu for Mobile */}
