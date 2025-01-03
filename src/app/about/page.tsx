@@ -32,12 +32,12 @@ export default function About() {
     
             {/* Right Section: Text Content */}
             <div>
-              <p className="text-orange-500 text-lg font-semibold mb-2">I'm a Designer</p>
+              <p className="text-orange-500 text-lg font-semibold mb-2">I'm an Ai Engineer</p>
               <h2 className="text-4xl font-bold text-gray-800 leading-tight mb-4">
-                I Can Design Anything You Want
+                I Can do Anything You Want
               </h2>
               <p className="text-gray-600 mb-6">
-                Hello there! I'm a web designer, and I'm very passionate and
+                Hello there! I'm a web designer,or Learning AI and I'm very passionate and
                 dedicated to my work. With 20 years of experience as a professional
                 web developer, I have acquired the skills and knowledge necessary
                 to make your project a success. I enjoy every step of the design
