@@ -1,11 +1,11 @@
-"use client"; // Import the necessary modules and components
+"use client"; 
+
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen bg-gradient-to-b from-white to-gray-100 text-black mt-20 ">
-    
+    <section className="relative h-screen bg-gradient-to-b from-white to-gray-100 text-black mt-20">
       {/* Hero Content */}
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between h-full px-6">
         {/* Text Content */}
@@ -41,8 +41,8 @@ export default function HeroSection() {
         </div>
 
         {/* Image Content */}
-        <div className="relative flex-1 flex justify-center items-center">
-          <div className="relative w-72 h-72 md:w-96 md:h-96">
+        <div className="relative flex-1 flex justify-center items-center mt-8 md:mt-0">
+          <div className="relative w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96">
             <Image
               src="/6117.jpg" // Replace with your image path
               alt="James Smith"
@@ -50,7 +50,7 @@ export default function HeroSection() {
               objectFit="cover"
               className="rounded-full shadow-lg border-4 border-white"
             />
-            <div className="absolute top-0 left-0 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+            <div className="absolute top-0 left-0 w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center shadow-md">
               <Image
                 src="/typescript.png" // Replace with AI logo path
                 alt="AI Logo"
@@ -58,7 +58,7 @@ export default function HeroSection() {
                 height={40}
               />
             </div>
-            <div className="absolute bottom-0 left-0 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+            <div className="absolute bottom-0 left-0 w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center shadow-md">
               <Image
                 src="/photo.png" // Replace with Figma logo path
                 alt="Figma Logo"
@@ -66,7 +66,7 @@ export default function HeroSection() {
                 height={40}
               />
             </div>
-            <div className="absolute top-0 right-0 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+            <div className="absolute top-0 right-0 w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center shadow-md">
               <Image
                 src="/figma.png" // Replace with Photoshop logo path
                 alt="Photoshop Logo"
@@ -79,77 +79,74 @@ export default function HeroSection() {
       </div>
 
       <section className="py-12 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-          Our Services
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Service 1 */}
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-full">
-                <Image
-                  src="/target.png" // Replace with your actual path
-                  alt="Pixel Perfect Icon"
-                  width={40}
-                  height={40}
-                />
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+            Our Services
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {/* Service 1 */}
+            <div className="bg-white shadow-lg rounded-lg p-6">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-purple-100 rounded-full">
+                  <Image
+                    src="/target.png" // Replace with your actual path
+                    alt="Pixel Perfect Icon"
+                    width={40}
+                    height={40}
+                  />
+                </div>
               </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-700 mb-2">
+                Pixel Perfect
+              </h3>
+              <p className="text-gray-600">
+                Most common methods for designing websites that work well on desktop is responsive and adaptive design.
+              </p>
             </div>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              Pixel Perfect
-            </h3>
-            <p className="text-gray-600">
-              Most common methods for designing websites that work well on
-desktop is responsive and adaptive design.
-            </p>
-          </div>
 
-          {/* Service 2 */}
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full">
-                <Image
-                  src="/brush.png" // Replace with your actual path
-                  alt="High Quality Icon"
-                  width={40}
-                  height={40}
-                />
+            {/* Service 2 */}
+            <div className="bg-white shadow-lg rounded-lg p-6">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-blue-100 rounded-full">
+                  <Image
+                    src="/brush.png" // Replace with your actual path
+                    alt="High Quality Icon"
+                    width={40}
+                    height={40}
+                  />
+                </div>
               </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-700 mb-2">
+                High Quality
+              </h3>
+              <p className="text-gray-600">
+                Most common methods for designing websites that work well on desktop is responsive and adaptive design.
+              </p>
             </div>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              High Quality
-            </h3>
-            <p className="text-gray-600">
-              Most common methods for designing websites that work well on
-desktop is responsive and adaptive design.
-            </p>
-          </div>
 
-          {/* Service 3 */}
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-yellow-100 rounded-full">
-                <Image
-                  src="/creative.png" // Replace with your actual path
-                  alt="Awesome Idea Icon"
-                  width={40}
-                  height={40}
-                />
+            {/* Service 3 */}
+            <div className="bg-white shadow-lg rounded-lg p-6">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-yellow-100 rounded-full">
+                  <Image
+                    src="/creative.png" // Replace with your actual path
+                    alt="Awesome Idea Icon"
+                    width={40}
+                    height={40}
+                  />
+                </div>
               </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-700 mb-2">
+                Awesome Idea
+              </h3>
+              <p className="text-gray-600">
+                Most common methods for designing websites that work well on desktop is responsive and adaptive design.
+              </p>
             </div>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              Awesome Idea
-            </h3>
-            <p className="text-gray-600">
-              Most common methods for designing websites that work well on
-desktop is responsive and adaptive design.
-            </p>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
     </section>
   );
 }
+
