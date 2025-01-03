@@ -6,7 +6,7 @@ export default function NavBar() {
 
   return (
     <div>
-      <nav className="absolute top-0 left-0 w-full py-4 px-8 flex justify-between items-center bg-transparent">
+      <nav className="absolute top-0 left-0 w-full py-4 px-8 flex justify-between items-center bg-black text-white z-10">
         {/* Logo */}
         <div className="text-2xl font-bold text-orange-600">
           <a href="/"> it&apos;sHasnain </a>
@@ -19,7 +19,7 @@ export default function NavBar() {
 
         {/* Navigation Links */}
         <ul
-          className={`flex-col md:flex-row flex gap-6 text-sm md:text-base absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 transition-all duration-300 ${
+          className={`flex flex-col md:flex-row gap-6 text-sm md:text-base absolute md:static top-16 left-0 w-full md:w-auto bg-black md:bg-transparent p-4 md:p-0 transition-all duration-300 ${
             isOpen ? "flex" : "hidden md:flex"
           }`}
         >
