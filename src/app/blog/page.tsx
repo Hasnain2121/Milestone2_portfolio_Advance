@@ -3,7 +3,7 @@ import React from 'react';
 const BlogSection = () => {
   const blogPosts = [
     {
-      title: 'Jim Morisson Says when the musics over turn off the light',
+      title: 'Jim Morrison Says when the music’s over, turn off the light',
       category: 'Web Development',
       date: '23 Dec',
       image: '/bl2.jpg',
@@ -23,7 +23,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-16 mt-20 ">
+    <div className="bg-gray-50 py-16 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base text-orange-500 font-semibold tracking-wide uppercase">From My Blog</h2>
@@ -53,14 +53,14 @@ const BlogSection = () => {
       <div className="mt-16 bg-purple-500 py-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold text-white">Subscribe Now</h3>
-          <p className="mt-2 text-gray-100">Get latest news, updates, tips, and tricks in your inbox</p>
-          <div className="mt-6 flex justify-center">
+          <p className="mt-2 text-gray-100">Get the latest news, updates, tips, and tricks in your inbox</p>
+          <div className="mt-6 flex flex-col sm:flex-row justify-center">
             <input
               type="email"
               placeholder="Your email here"
-              className="w-2/3 sm:w-1/2 px-4 py-3 rounded-l-lg focus:outline-none"
+              className="w-full sm:w-2/3 px-4 py-3 rounded-t-lg sm:rounded-l-lg sm:rounded-t-none focus:outline-none"
             />
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-r-lg font-bold hover:bg-orange-600 focus:outline-none">
+            <button className="bg-orange-500 text-white px-6 py-3 rounded-b-lg sm:rounded-r-lg sm:rounded-b-none font-bold hover:bg-orange-600 focus:outline-none">
               Send Now
             </button>
           </div>
@@ -71,3 +71,4 @@ const BlogSection = () => {
 };
 
 export default BlogSection;
+
