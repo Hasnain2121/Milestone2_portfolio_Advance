@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between h-full px-6">
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 pt-20 ">
             Hello, I’m <span className="text-orange-600">Muhammad Hasnain</span>
           </h1>
           <h2 className="text-xl md:text-2xl text-green-600 font-semibold mb-4">
