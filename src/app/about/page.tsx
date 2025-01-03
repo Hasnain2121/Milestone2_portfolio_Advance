@@ -35,7 +35,7 @@ export default function About() {
             I Can Design Anything You Want
           </h2>
           <p className="text-gray-600 mb-6">
-            Hello there! I'm a web designer, and I'm very passionate and dedicated
+            Hello there! I'm a web developr leaning AI + Machine Learning , and I'm very passionate and dedicated
             to my work. With 20 years of experience as a professional web developer,
             I have acquired the skills and knowledge necessary to make your project a success.
             I enjoy every step of the design process, from discussion and collaboration.
